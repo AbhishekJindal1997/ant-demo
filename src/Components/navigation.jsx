@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Tabs } from "antd";
 import Banner from "./bannerImage";
 import Skills from "./skills";
+import Services from "./services";
 
 const { TabPane } = Tabs;
 
@@ -12,9 +13,10 @@ const Navigation = () => {
         <TabPane tab='Home' key='1'>
           <Banner />
           <Skills />
+          <Services />
         </TabPane>
         <TabPane tab='Services' key='2'>
-          Content of Tab Pane 2
+          <Services />
         </TabPane>
         <TabPane tab='Portfolio' key='3'>
           Content of Tab Pane 3

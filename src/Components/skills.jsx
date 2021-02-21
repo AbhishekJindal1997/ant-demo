@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Row, Col } from "antd";
-import BannerImage from "../Images/bulb.jpg";
 import { Typography } from "antd";
 import { Progress } from "antd";
 import { Timeline } from "antd";
@@ -12,34 +11,36 @@ const Skills = () => {
   return (
     <div className='skills_exp'>
       <Row>
-        <Col span={12}>
-          <Title align='center'>Professional Work Skills</Title>
+        <Col span={12} className='skillsCircles'>
+          <Title level={2} align='center'>
+            Professional Work Skills
+          </Title>
           <div align='center'>
             <Progress
               type='circle'
               percent={75}
-              width={80}
+              width={70}
               strokeColor='#eb2f96'
               format={() => "HTML"}
             />
             <Progress
               type='circle'
               percent={100}
-              width={80}
+              width={70}
               strokeColor='#fadb14'
               format={() => "CSS"}
             />
             <Progress
               type='circle'
               percent={75}
-              width={80}
+              width={70}
               format={() => "JS"}
             />
             <Progress
               align='center'
               type='circle'
               percent={100}
-              width={80}
+              width={70}
               strokeColor='#254000'
               format={() => "REACT"}
             />
@@ -62,8 +63,11 @@ const Skills = () => {
             </div>
           </div>
         </Col>
-        <Col span={12}>
-          <Title align='center'>My Experience</Title>
+
+        <Col span={12} className='experience'>
+          <Title level={2} align='center' className='expTitle'>
+            My Experience
+          </Title>
           <Timeline mode='alternate'>
             <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
             <Timeline.Item color='green'>
