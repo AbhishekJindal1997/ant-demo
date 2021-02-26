@@ -65,9 +65,10 @@ const Skills = () => {
         </Col>
 
         <Col span={12} className='experience'>
-          <Title level={2} align='center' className='expTitle'>
+          <Title level={2} align='center'>
             My Experience
           </Title>
+
           <Timeline mode='alternate'>
             <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
             <Timeline.Item color='green'>
