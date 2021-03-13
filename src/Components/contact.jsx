@@ -53,7 +53,7 @@ const Contact = () => {
               </Form.Item>
 
               <Form.Item>
-                <Input placeholder="Message" />
+                <Input placeholder="Messagea" />
               </Form.Item>
 
               <Form.Item {...buttonItemLayout}>
