@@ -12,15 +12,15 @@ const Banner = () => {
   return (
     <>
       <Row>
-        <Col span={12} className='bannerimg'>
-          <img src={BannerImage} width='135%' height='800px'></img>
+        <Col span={12} className="bannerimg">
+          <img src={BannerImage} width="130%" height="80%"></img>
         </Col>
 
         <Col span={12}>
-          <div className='bannerIntro'>
+          <div className="bannerIntro">
             <Title level={4}>Welcome I'M</Title>
             <Title>ABHISHEK JINDAL</Title>
-            <Title level={4}>Web Design and UX Designer</Title>
+            <Title level={4}>Web Developer and UX Designer</Title>
             <Title level={5}>
               Hard-Working, Highly-Motivated, meticulous Full-Stack Developer
               with over 1.5+ years of experience in software development and
@@ -31,10 +31,10 @@ const Banner = () => {
               troubleshooting and solving complex technical issues. Seeking to
               build, design and code.
             </Title>
-            <Button type='primary' className='bannerButton'>
+            <Button type="primary" className="bannerButton">
               My Work
             </Button>
-            <Button type='primary' className='bannerButton'>
+            <Button type="primary" className="bannerButton">
               Hire Me
             </Button>
           </div>

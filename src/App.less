@@ -1,6 +1,13 @@
 @import "~antd/dist/antd.less";
 
+@dhbcd: black;
+
+.ant-row {
+  height: 43vw;
+}
+
 .skills_exp {
+  padding-top: 100px;
   .ant-progress {
     margin: 10px;
     .ant-progress-text {
@@ -25,6 +32,7 @@
   margin-top: -130px;
   padding: 50px;
   background-color: #f7f7f7;
+  z-index: -1;
   h2.ant-typography {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -56,7 +64,12 @@
 
 .ant-tabs-nav {
   background-color: #f7f7f7;
-  border: 0px;
+  border-bottom: 1px solid;
+  box-shadow: 5px 5px 5px #888888;
+  .ant-tabs-tab-btn {
+    font-size: 0.9vw;
+    margin: 2px;
+  }
 }
 
 .bannerimg {
@@ -66,20 +79,32 @@
 
 .portfolio {
   background-color: @primary-color;
-  height: 800px;
-  margin: 0 auto;
-  padding-left: 30px;
+  height: auto;
+  padding: 30px 0px;
+  margin-top: -240px;
+  .project {
+    max-width: 480px;
+    height: 300px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    .project:hover {
+      box-shadow: 5px 5px 5px #888888;
+    }
+    .visitButton {
+      margin-top: 10px;
+    }
+  }
   h2.ant-typography {
     color: #f7f7f7;
   }
-  .portfolioRow {
-    margin: 0 auto;
+  .ant-row {
+    margin: 50px;
+    height: auto;
+    margin-bottom: 80px;
   }
 }
 
-.ant-card-hoverable {
-  border-color: #f7f7f7;
-}
 .servicesContainer {
   margin: 0 auto;
   img {
@@ -89,5 +114,14 @@
   }
   h5.ant-typography {
     margin-bottom: 40px;
+  }
+}
+
+.contact {
+  height: 800px;
+  .contactImage {
+    background-color: #f7f7f7;
+    height: 100%;
+    width: 100%;
   }
 }
